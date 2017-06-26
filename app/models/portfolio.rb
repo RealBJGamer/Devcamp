@@ -1,6 +1,6 @@
 class Portfolio < ApplicationRecord
   has_many :technologies
-  
+  accepts_nested_attributes_for :technologies
   validates_presence_of :title , :body , :main_image , :thumb_image, :main_image
 
   def self.angular
