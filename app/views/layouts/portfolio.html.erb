@@ -7,13 +7,12 @@
   <meta name= "keywords" content="<%=@seo_keywords%>"/>
 
   
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    
-        <link rel="stylesheet" type="text/css" href="css/css.css">
+    <link rel="stylesheet" type="text/css" href="css/css.scss">
     
     <div class="Nav">
     <nav>
@@ -32,14 +31,15 @@
       <div class="Item5">
       <div><%= link_to "Portfolio", portfolios_path%></div>
       </div>
-      
     </nav>
     </div>
     
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     
+    
 
+    
     
     <% if current_user.is_a?(User) %>
     <%= link_to "Logout", destroy_user_session_path, method: :delete %>
@@ -50,6 +50,7 @@
     
     <%= yield %>
     
+
     <% if session[:source] %>
       <p> Thanks for visiting me from <%= session[:source] %> </p>
     <% end %>

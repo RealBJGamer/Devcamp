@@ -13,3 +13,55 @@
  *= require_tree .
  *= require_self
  */
+ 
+body{
+ 	color:black;
+ 	background-color:lightgray;
+	}
+ 
+ 
+.Nav{
+  
+		background:linear-gradient(to left, #00FFFF,#00FFFF);
+		text-align:center;
+		padding:0px;
+		margin-top:-14px;
+		margin-left:-10px;
+		margin-right:-10px;
+		background-repeat:no-repeat;
+	}
+.Item1:hover{
+		
+		font-size:18px;
+		color:gray;
+		text-decoration:underline;
+		
+	}
+.Item2:hover{
+		
+		font-size:18px;
+		color:gray;
+		text-decoration:underline;
+		
+	}
+.Item3:hover{
+		
+		font-size:18px;
+		color:gray;
+		text-decoration:underline;
+		
+	}
+.Item4:hover{
+		
+		font-size:18px;
+		color:gray;
+		text-decoration:underline;
+		
+	}
+.Item5:hover{
+		
+		font-size:18px;
+		color:gray;
+		text-decoration:underline;
+		
+	}
