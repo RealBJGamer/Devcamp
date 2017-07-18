@@ -12,7 +12,6 @@
   </head>
 
   <body>
-    
         <link rel="stylesheet" type="text/css" href="css/css.scss">
     
     <%=render "shared/nav" %>
@@ -26,6 +25,7 @@
     
     <%= yield %>
     
+    <%= @copyright %>
     <%source_helper("application")%>
     
   </body>
