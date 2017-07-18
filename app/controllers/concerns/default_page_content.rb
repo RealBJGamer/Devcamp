@@ -7,5 +7,6 @@ module DefaultPageContent
 
   def set_title
     @page_title ="DevcampTest | My Portfolio Website"
+    @seo_keywords="Brandon Yates portfolio"
   end
 end
