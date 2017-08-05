@@ -1,11 +1,10 @@
 <div class="portfolio-container">
   <div class="row">
     <div class="col-sm-7">
-    <%= image_tag portfolio_img(@portfolio_item.thumb_image, 'main'), width: '100%', unless @portfolio_item.main_image.nil? %>
+      <%= image_tag @portfolio_item.main_image, width: '100%' unless @portfolio_item.main_image.nil? %>    </div>
     </div>
-
+    
     <div class="col-sm-5">
-      
       
       <h1><%= @portfolio_item.title %></h1>
       
@@ -19,6 +18,12 @@
       <hr>
       <% @portfolio_item.technologies.each do |t| %>
       <p><%= t.name %></p>
+      <% end %>
+      
+      <% if logged_in?(:site_admin) %>
+        <div class="col-sm-12">
+          <%= link_to "Edit Item" edit_portfolio_path(@porfolio_item), class: 'btn bth-warning' %>
+        </div>
       <% end %>
     </div>
   </div>
