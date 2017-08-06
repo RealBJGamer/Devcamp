@@ -107,10 +107,10 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+    color: #333;
+    text-shadow: none;
+    background-color: #00FFFF;
+    border: .05rem solid #292b2c;
 }
 
 
@@ -121,7 +121,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color:	#00008B;
 }
 body {
   color: #fff;
@@ -175,7 +175,7 @@ body {
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255,255,255,.25);
+  border-bottom-color: 	#2F4F4F;
 }
 
 .nav-masthead .nav-link + .nav-link {

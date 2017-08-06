@@ -74,10 +74,24 @@ body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
 }
 
+div.col-sm-8.py-4{
+	background-color:lightgray;
+}
+
+div.col-sm-4.py-4{
+	background-color:gray;
+}
+
+footer.text-muted{
+background-color:#333;
+}
+
 .navbar {
   margin-bottom: 0;
 }
-
+section.jumbotron.text-center{
+	padding:3px;
+}
 .jumbotron {
   padding-top: 6rem;
   padding-bottom: 6rem;
