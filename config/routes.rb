@@ -16,9 +16,8 @@ Rails.application.routes.draw do
     end
   end
   
-  resources :posts, except: [:show]
-  
-  get 'posts/*missing', to: 'posts#missing'
+  mount ActionCable.server => '/cable'
   
   root to: 'pages#home'
+
 end
