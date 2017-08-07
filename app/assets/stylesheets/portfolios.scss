@@ -69,11 +69,30 @@ body{
 		
 	}
  */
- 
+
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
 }
 
+ @media only screen and (max-width:767px){
+div.col-md-7{
+	margin-bottom: 0px;
+	height:330px;
+}
+}
+div.col-md-7{
+	margin-bottom: 20px;
+}
+div.col-md-5{
+	text-align:center;
+}
+a.btn.btn-warning{
+	margin-bottom:10px;
+}
+div.row{
+	padding:0 auto;
+	text-align:center;
+}
 div.col-sm-8.py-4{
 	background-color:lightgray;
 }
