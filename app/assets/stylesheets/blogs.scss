@@ -93,6 +93,22 @@ p.lead.blog-description{
 /*
  * Blog name and description
  */
+ h1.blog-title {
+   text-align:center;
+ }
+div.navbar.navbar-inverse.bg-inverse{
+  margin-bottom: 20px;
+}
+div.col-sm-8.py-4{
+	background-color:lightgray;
+	text-align:center;
+}
+
+div.col-sm-4.py-4{
+	background-color:gray;
+	text-align:center;
+}
+
 
 .blog-header {
   background:linear-gradient(to left, #00FFFF,#00FFFF);
@@ -198,4 +214,9 @@ p.lead.blog-description{
 
 .comment-name {
   font-weight: 700;
+}
+
+.blogcrumb a {
+  font-size: 1.25em;
+  margin: 0px 10px 0px 10px;
 }
